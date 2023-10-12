@@ -22,9 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
         <div className="h-16 lg:h-0 text-white"></div>
-        <div className="fixed bottom-0 w-full">
           <BottomNavigation />
-        </div>
       </body>
     </html>
   );
