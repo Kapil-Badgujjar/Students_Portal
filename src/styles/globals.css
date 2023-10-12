@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-$base-color1: #004E98;
-$base-color2: #EBEBEB;
-$nuetral-color: #C0C0C0;
-$acent-color1: #FF6700;
-$acent-color2: #3A6EA5;
-
 
 :root {
   --foreground-rgb: 0, 0, 0;

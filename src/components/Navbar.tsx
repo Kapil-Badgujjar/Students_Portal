@@ -16,6 +16,6 @@ export default function Navbar() {
             <Link href='/'>Login</Link>
           </div>
         </div>
-    </nav>
+     </nav>
   )
 }

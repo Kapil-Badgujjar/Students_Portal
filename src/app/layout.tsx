@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import "../styles/globals.scss";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import BottomNavigation from "@/components/BottomNavigation";
@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "csworld.com",
   description:
     "csworld is the official website for the computer science students to find study materials.",
+    viewport: {
+      width: 'device-width',
+      initialScale: 1,
+      maximumScale: 1,
+    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -21,8 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="text-3xl sm:text-6xl py-2">-</div>
         {children}
         <Footer />
-        <div className="h-16 lg:h-0 text-white"></div>
-          <BottomNavigation />
+        <BottomNavigation />
       </body>
     </html>
   );
